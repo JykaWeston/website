@@ -1,0 +1,200 @@
+:root {
+    --background-color: #346BBC;
+    --title-color: #ffffff;
+    --insta-color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    --linkedin-color: #2867b2;
+    --mail-color: #4ac464;
+    scrollbar-width: thin;
+}
+
+button:focus {
+    outline: none;
+}
+
+header, footer {
+    background: var(--background-color);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 3;
+    color: var(--title-color);
+    font-family: monospace;
+    font-weight: bold;
+}
+
+header {
+    height: 10vh;
+    left: 0%;
+    top: 0%;
+    position: fixed;
+    box-shadow: rgba(150, 150, 150, 0.253) 0 3px 15px;
+    text-align: left;
+    animation: slideInDown;
+    animation-duration: 2s;
+    align-content: center;
+}
+
+header h1 {margin-left: 5%;}
+
+nav {
+    display: flex;
+    float: right;
+    margin: 0 0 0 auto;
+}
+
+nav a button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border:none;
+    background: var(--background-color);
+    margin: 10px;
+    display: inline-block;
+    box-shadow:  6px 6px 12px #264e89, 
+    -6px -6px 12px #4288ef;
+    fill: var(--title-color);
+    transition: 0.3s;
+}
+
+nav button:hover {
+    animation: swing;
+    animation-duration: 1s;
+}
+
+#insta:hover {background: var(--insta-color);}
+#linkedin:hover {background: var(--linkedin-color);}
+#portfolio:hover {background: var(--mail-color);}
+#mail:hover {background-color: #d0ba3c;}
+
+.bg-pic {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    height: 400px;
+    min-height: 400px;
+}
+
+#bg-pic-1 {background-image: url("../img/code.jpg");}
+#bg-pic-2 {background-image: url("../img/camera.jpg");}
+#bg-pic-3 {background-image: url("../img/computer.jpg");}
+
+#bg-pic-1 div {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24px;
+    z-index: 2;
+    animation: backInDown;
+    animation-duration: 2s;
+
+}
+
+section {
+    position: relative;
+    height: fit-content;
+    display: grid;
+    box-shadow: 0px 6px 10px -2px rgba(0,0,0,0.75);
+    z-index: 2;
+}
+
+section div {
+    border-bottom: solid 2px rgb(148, 148, 148);
+    display: inline-block;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+section div h2{
+    padding-top: 10px;
+    margin: 0 10px 10px 10px;
+}
+
+section div p{
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+section div div {
+    display: flex;
+    float: right;
+    border: none;
+    margin-bottom: 10px;
+}
+
+section div div img {
+    height: 70px;
+    width: 70px;
+}
+
+
+#contact {
+    border: none;
+
+}
+
+#contact  div{
+    display: inline-block;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+#contact a {
+    margin: 0 5px 0 5px;
+    fill: black;
+    color: black;
+    box-shadow:  6px 6px 12px #c9c9c9, 
+             -6px -6px 12px #ffffff;
+    padding: 13px;
+    font-size: 18px;  
+    border-radius: 23px;  
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    text-decoration: none;
+    fill: white;
+    color: white;
+    animation: swing;
+    animation-duration: 1s;
+}
+
+#insta-contact:hover {
+    background: var(--insta-color);
+}
+
+#linkedin-contact:hover {
+    background: var(--linkedin-color);
+}
+
+#mail-contact:hover {
+    background: var(--mail-color);
+}
+
+footer {
+    position: relative;
+    bottom: 0%;
+    height: 5vh;
+    font-size: 14px;
+    vertical-align: middle;
+    
+}
+
+#copyright {
+    margin: 0 5px 0 auto;
+    display: flex;
+    float: right;
+}
+
+#name {margin-left: 5px;}
