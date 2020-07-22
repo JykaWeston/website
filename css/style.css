@@ -1,0 +1,97 @@
+:root {
+    --background-color: #2b305e;
+    --title-color: #ffffff;
+    --insta-color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    --linkedin-color: #2867b2;
+    --portfolio-color: #4ac464;
+    --mail-color: #e6ce46;
+    scrollbar-width: thin;
+}
+
+.navbar {
+    background-color: var(--background-color);
+    box-shadow: 0px 13px 9px -7px rgba(0,0,0,0.75);
+}
+
+.nav-link  span{
+    color: var(--title-color);
+    font-size: 25px;
+}
+
+
+
+#nav-insta:hover{
+    background-image: var(--insta-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#nav-linkedin:hover span{
+    color: var(--linkedin-color);
+}
+
+#nav-portfolio:hover span{
+    color: var(--portfolio-color);
+}
+
+#nav-mail:hover span{
+    color: var(--mail-color);
+}
+
+.col-xl {
+    animation: slideInDown;
+    animation-duration: 1s;
+}
+
+.d-flex {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+i {
+    font-size: 5vh;
+}
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    height: 400px;
+    min-height: 400px;
+
+}
+
+#bg-1 {background-image: url("/assets/img/code.jpg");}
+#bg-2 {background-image: url("/assets/img/camera.jpg");}
+#bg-3 {background-image: url("/assets/img/computer.jpg");}
+
+.contact {
+    font-size: 18px;
+}
+
+.contact:hover {
+    text-decoration: none;
+    animation: pulse;
+    animation-duration: 0.5s;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+    .nav-link:hover {
+        animation: swing;
+        animation-duration: 0.5s;
+    }
+}
