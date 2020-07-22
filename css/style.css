@@ -73,7 +73,7 @@ i {
     font-size: 18px;
 }
 
-.contact:hover {
+a:hover {
     text-decoration: none;
     animation: pulse;
     animation-duration: 0.5s;
