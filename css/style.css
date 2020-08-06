@@ -13,6 +13,9 @@ dfn {
     font-weight: bold;
 }
 
+#header {
+    font-size: 30px;
+}
 
 .navbar {
     background-color: var(--background-color);
@@ -22,7 +25,6 @@ dfn {
 
 .nav-link  span{
     color: var(--title-color);
-    font-size: 25px;
 }
 
 #nav-insta:hover span{
@@ -97,6 +99,13 @@ a:hover {
     background-color: var(--background-color);
     color: white;
     font-weight: bold;
+}
+
+.footer button {
+    background-color: var(--background-color);
+    font-weight: bold;
+    color: var(--title-color);
+    border: none;
 }
 
 @media (min-width: 1200px) {
