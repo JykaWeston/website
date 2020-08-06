@@ -108,6 +108,15 @@ a:hover {
     border: none;
 }
 
+.footer button:focus {
+    outline: none;
+}
+
+.dropdown-item:hover {
+    animation: none;
+    background-color: lightgray;
+}
+
 @media (min-width: 1200px) {
     .nav-link:hover {
         animation: swing;
