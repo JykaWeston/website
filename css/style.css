@@ -117,6 +117,10 @@ a:hover {
     background-color: lightgray;
 }
 
+.card, #contact {
+    padding: 5px;
+}
+
 @media (min-width: 1200px) {
     .nav-link:hover {
         animation: swing;
