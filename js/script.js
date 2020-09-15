@@ -23,7 +23,7 @@ function theme() {
 } else {
     root.style.setProperty("--bg-theme", "#ffffff");
     root.style.setProperty("--text-theme", "#000000");
-    //root.style.setProperty("--card-hover-color", "#212121");
-    //root.style.setProperty("--card-hover-text-color", "wheat");
+    root.style.setProperty("--bg-theme-hover", "#212121");
+    root.style.setProperty("--text-theme-hover", "wheat"); 
 }
 }
