@@ -1,11 +1,28 @@
 :root {
-    --background-color: #2b305e;
+    --bar-color: #2b305e;
     --title-color: #ffffff;
     --insta-color: #cc2366;
     --linkedin-color: #2867b2;
     --portfolio-color: #4ac464;
     --mail-color: #e6ce46;
-    scrollbar-width: thin;
+    --bg-theme: #ffffff;
+    --bg-theme-hover: #212121;
+    --text-theme: #212121;
+    --text-theme-hover: wheat;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: var(--bg-theme);
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 dfn {
@@ -18,7 +35,7 @@ dfn {
 }
 
 .navbar {
-    background-color: var(--background-color);
+    background-color: var(--bar-color);
     box-shadow: 0px 13px 9px -7px rgba(0,0,0,0.75);
     transition: 0.2s;
 }
@@ -42,6 +59,56 @@ dfn {
 #nav-mail:hover span{
     color: var(--mail-color);
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--bar-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+input:checked + .slider {
+    background-color: #212121;
+  }
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    
+  }
 
 #main {
     display: flex;
@@ -96,13 +163,14 @@ a:hover {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: var(--background-color);
+    background-color: var(--bar-color);
     color: white;
     font-weight: bold;
+    padding-left: 10px;
 }
 
 .footer button {
-    background-color: var(--background-color);
+    background-color: var(--bar-color);
     font-weight: bold;
     color: var(--title-color);
     border: none;
@@ -117,8 +185,27 @@ a:hover {
     background-color: lightgray;
 }
 
-.card, #contact {
+.card {
     padding: 5px;
+    background-color: var(--bg-theme);
+    color:var(--text-theme);
+    transition: 0.3s;
+}
+
+#contact {
+    background-color: var(--bg-theme);
+    color: var(--text-theme);
+    transition: 0.3s;
+}
+
+#contact h2 {
+    margin-left: 20px;
+}
+
+.card:hover {
+    background-color: var(--bg-theme-hover);
+    color: var(--text-theme-hover);
+    transition: 0.3s;
 }
 
 @media (min-width: 1200px) {
