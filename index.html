@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="Développeur Freelance pour vos sites web CMS ou statique, vos projets logiciels, 
         vos différents services linux (NAS, VPN, serveur de jeux) mais aussi création de vos logos ou de vos photos">
     <meta name="Copyright" content="Dylan DELBAUVE">
@@ -16,123 +16,168 @@
     <script src="https://kit.fontawesome.com/56a1995feb.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="assets/icon/logo.svg" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>dylandelbauve.fr - Développement informatique & création graphique</title>
 </head>
 
 <body>
-    <header id="header">
-        <div class="container-fluid">
-            <div class="navbar fixed-top navbar-expand-lg navbar-dark">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    
-                    <a class="navbar-brand" href="#"><img src="assets/icon/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo du site"> dylandelbauve.fr</a>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 rounded-pill">
-                        <li id="nav-insta" class="nav-item"><a class="nav-link" href="https://www.instagram.com/dylan_dlbv/?hl=fr"><span class="fa fa-instagram"></span></a></li>
-                        <li id="nav-linkedin" class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/dylandelbauve/"><span class="fa fa-linkedin"></span></a></li>
-                        <li id="nav-portfolio" class="nav-item"><a class="nav-link" href="https://www.portfolio.dylandelbauve.fr"><span class="fas fa-suitcase"></span></a></li>
-                        <li id="nav-mail" class="nav-item"><a class="nav-link" href="mailto:contact@dylandelbauve.fr"><span class="fas fa-envelope"></span></a></li>
-                    </ul>
-                </div>
 
-                <form class="form-inline">
-                    <label class="switch">
-                        <input class="fas fa-sun" type="checkbox" name="" id="changeTheme">
-                        <span class="slider"></span>
-                    </label>
-                    
-                </form>
+    <div class="container-fluid">
+        <div class="screen-size presentation parallax">
+            <div class="col-12">
+                <h1>Dylan Delbauve</h1>
+                <h2>Développeur & Photographe</h2>
+                <img src="/assets/icon/logo.svg" alt="" width="150px">
             </div>
         </div>
-    </header>
+    </div>
 
-    <main class="container-fluid" role="main">
-        <div id="bg-1" class="parallax"></div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl wow animate__slideInLeft card">
-                    <div class="card-body">
-                        <h2 class="card-title"><i class="fas fa-globe"></i> Site Web</h2>
-                        <p class="card-text">
-                            Besoin d'un site vitrine pour votre entreprise, vos produits ou votre travail ?
-                            Un site WordPress personnalisé est fait pour vous.
-                        </p>
-                        <p class="card-text">
-                            <i class="fab fa-wordpress"></i>
-                        </p>
-                        <a class="card-link" href="https://portfolio.dylandelbauve.fr">Portfolio WP</a>
+    <div class="container-fluid">
+        <div class="screen-size">
+            <div id="bg-3" class="container-fluid parallax">
 
+                <div class="col-lg-6 col-md full">
+                    <div class="col-lg-6 offset-3">
+                            <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="card-body">
+                                    <h2 class="card-title"><i class="fas fa-globe"></i> Site Web</h2>
+                                    <p class="card-text">
+                                        Besoin d'un site vitrine pour votre entreprise, vos produits ou votre travail ?
+                                        Un site WordPress personnalisé est fait pour vous.
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-link" href="https://portfolio.dylandelbauve.fr">Portfolio WordPress</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl wow animate__slideInUp card">
-                    <div class="card-body">
-                        <h2 class="card-title"><i class="fas fa-server"></i> Système</h2>
-                        <p class="card-text">
-                            Mise en place de différents services linux comme un <dfn title="Serveur de stockage multimedia">NAS</dfn>, <dfn title="Réseau virtuel privé">VPN</dfn> ou même serveur de jeu (e.g : Minecraft) autant sur un serveur chez vous que sur un <dfn title="Serveur virtuel privé">VPS</dfn>.
-                        </p>
-                        <i class="fab fa-ubuntu"></i>
-                        <i class="fab fa-centos"></i>
+            </div>
+        </div>
+    </div>
 
+    <div class="transition parallax"></div>
+
+    <div class="container-fluid">
+        <div class="screen-size">
+            <div id="bg-4" class="container-fluid parallax">
+
+                <div class="col-md-6 offset-md-6 col-md full">
+                    <div class="col-lg-6 offset-3">
+                            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="card-body">
+                                    <h2 class="card-title"><i class="fas fa-server"></i> Système</h2>
+                                    <p class="card-text">
+                                        Mise en place de différents services linux comme un <dfn title="Serveur de stockage multimedia">NAS</dfn>, <dfn title="Réseau virtuel privé">VPN</dfn> ou même serveur de jeu (e.g : Minecraft) autant sur un serveur chez vous que sur un <dfn title="Serveur virtuel privé">VPS</dfn>.
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <i class="fab fa-ubuntu"></i>
+                                    <i class="fab fa-centos"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl wow animate__slideInRight card">
-                    <div class="card-body">
-                        <h2 class="card-title"><i class="fas fa-laptop-code"></i> Développement</h2>
-                        <p class="card-text">
-                            Pour le développement de vos logiciels en Java/C# ou de vos scripts en Python et Bash.
-                        </p>
-                        <i class="fab fa-windows"></i>
-                        <i class="fab fa-linux"></i>
-                        <i class="fab fa-android"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition parallax"></div>
+
+    <div class="container-fluid">
+        <div class="screen-size">
+            <div id="bg-1" class="container-fluid parallax">
+                <div class="col-lg-6 col-md full">
+                    <div class="col-lg-6 offset-3">
+                            <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="card-body">
+                                    <h2 class="card-title"><i class="fas fa-laptop-code"></i> Développement</h2>
+                                    <p class="card-text">
+                                        Pour le développement de vos logiciels en Java/C# ou de vos scripts en Python et Bash.
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <i class="fab fa-windows"></i>
+                                    <i class="fab fa-linux"></i>
+                                    <i class="fab fa-android"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition parallax"></div>
+
+    <div class="container-fluid">
+        <div class="screen-size">
+            <div id="bg-5" class="container-fluid parallax">
+                <div class="col-md-6 offset-md-6 col-md full">
+                    <div class="col-lg-6 offset-3">
+                            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="card-body">
+                                    <h2 class="card-title"><i class="fas fa-pencil-ruler"></i> Création vectorielle</h2>
+                                    <p class="card-text">
+                                        Création de logo vectoriel 2D sur mesure. 
+                                    </p>                    
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-link" href="https://www.portfolio.dylandelbauve.fr/creations/">Exemple</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition parallax"></div>
+
+    <div class="container-fluid">
+        <div class="screen-size">
+            <div id="bg-2" class="container-fluid parallax">
+                    <div class="col-lg-6 col-md full">
+                        <div class="col-lg-6 offset-3">
+                            <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="card-body">
+                                    <h2 class="card-title"><i class="fa fa-camera"></i> Photographie</h2>
+                                    <p class="card-text">
+                                        Prise de vue pour du paysage (naturel ou urbain) ou de la macro. 
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-link" href="https://pixabay.com/users/dylan_dlbv-15049403/">Pixabay</a><a class="card-link" href="https://www.instagram.com/dylan_dlbv/?hl=fr">Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="screen-size presentation parallax">
+            <div class="col-12">
+                <h1>Besoin de renseignement ?</h1>
+                <h2>Vous pouvez me contacter ci-dessous</h2>
+                <br>
+                <div class="row d-flex mb-4">
+                    <a class="col mx-auto contact" href="https://www.instagram.com/dylan_dlbv/?hl=fr"><span class="fa fa-instagram"></span> Instagram</a>
+                    <a class="col mx-auto contact" href="mailto:contact@dylandelbauve.fr"><span class="fas fa-envelope"></span> Mail</a>
+                    <a class="col mx-auto contact" href="https://www.linkedin.com/in/dylandelbauve/"><span class="fa fa-linkedin"></span> Linkedin</a>
                 </div>
             </div>
         </div>
-        <div id="bg-2" class="parallax"></div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl wow animate__slideInLeft card">
-                    <div class="card-body">
-                        <h2 class="card-title"><i class="fas fa-pencil-ruler"></i> Création vectorielle</h2>
-                        <p class="card-text">
-                            Création de logo vectoriel 2D sur mesure. 
-                        </p>                    
-                        <a class="card-link" href="https://www.portfolio.dylandelbauve.fr/creations/">Exemple</a>
-                    </div>
-                </div>
-                <div class="col-xl wow animate__slideInRight card">
-                    <div class="card-body">
-                        <h2 class="card-title"><i class="fa fa-camera"></i> Photographie</h2>
-                        <p class="card-text">
-                            Prise de vue pour du paysage (naturel ou urbain) ou de la macro. 
-                        </p>
-                        <a class="card-link" href="https://pixabay.com/users/dylan_dlbv-15049403/">Pixabay</a><a class="card-link" href="https://www.instagram.com/dylan_dlbv/?hl=fr">Instagram</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="bg-3" class="parallax"></div>
-        <div class="container-fluid">
-            <div id="contact" class="row">
-                <h2><i class="fas fa-address-card"></i> Contact</h2>
-            </div>
-            <div class="row">
-                <div class="container">
-                    <div class="row d-flex mb-4">
-                        <a class="col mx-auto contact" href="https://www.instagram.com/dylan_dlbv/?hl=fr"><span class="fa fa-instagram"></span> Instagram</a>
-                        <a class="col mx-auto contact" href="mailto:contact@dylandelbauve.fr"><span class="fas fa-envelope"></span> Mail</a>
-                        <a class="col mx-auto contact" href="https://www.linkedin.com/in/dylandelbauve/"><span class="fa fa-linkedin"></span> Linkedin</a>
-                </div>
-            </div>
-    </main>
+    </div>
 
     <footer class="footer">
         <div class="container-fluid">
             <span>dylan delbauve - tous droits réservés</span>
-            <span><button class="btn-group" data-toggle="modal" data-target="#Mentions-legales">M.Légales</button></span>
+            <span><button class="btn-group" data-toggle="modal" data-target="#Mentions-legales">Mentions légales</button></span>
             <span><button onclick="window.open('assets/pdf/CGV.pdf')" class="btn-group">CGV</button></span>
             <span>
                 <div class="btn-group dropup">
@@ -228,5 +273,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-<script>new WOW().init();</script>
 <script src="js/script.js"></script>
+<script>
+    AOS.init();
+  </script>

@@ -1,216 +1,169 @@
 :root {
-    --bar-color: #2b305e;
-    --title-color: #ffffff;
-    --insta-color: #cc2366;
-    --linkedin-color: #2867b2;
-    --portfolio-color: #4ac464;
-    --mail-color: #e6ce46;
-    --bg-theme: #ffffff;
-    --bg-theme-hover: #212121;
-    --text-theme: #212121;
-    --text-theme-hover: wheat;
-    scrollbar-width: none;
+  --bg-theme: #212121;
+  --alt-theme: #ffffff;
+  --text-theme: #212121;
+  scrollbar-width: none;
 }
 
 body {
-    background-color: var(--bg-theme);
-    transition: 0.3s;
+  background-color: var(--bg-theme);
+  transition: 0.3s;
+  overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-dfn {
-    font-style: normal;
-    font-weight: bold;
-}
-
-#header {
-    font-size: 30px;
-}
-
-.navbar {
-    background-color: var(--bar-color);
-    box-shadow: 0px 13px 9px -7px rgba(0,0,0,0.75);
-    transition: 0.2s;
-}
-
-.nav-link  span{
-    color: var(--title-color);
-}
-
-#nav-insta:hover span{
-    color: var(--insta-color);
-}
-
-#nav-linkedin:hover span{
-    color: var(--linkedin-color);
-}
-
-#nav-portfolio:hover span{
-    color: var(--portfolio-color);
-}
-
-#nav-mail:hover span{
-    color: var(--mail-color);
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffffff;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
-  }
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--bar-color);
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-input:checked + .slider {
-    background-color: #212121;
-  }
-  
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-    
-  }
-
-#main {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    align-items: center;
-    justify-items: center;
-    font-size: 30px;
-}
-
-.col-xl {
-    animation-duration: 2s;
-}
-
-.d-flex {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-}
-
-i {
-    font-size: 5vh;
+.screen-size {
+  height: 100vh;
+  width: 100vw;
 }
 
 .parallax {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-    height: 400px;
-    min-height: 400px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  height: 100vh;
+  min-height: 400px;
 }
 
-#bg-1 {background-image: url("/assets/img/code.jpg");}
-#bg-2 {background-image: url("/assets/img/camera.jpg");}
-#bg-3 {background-image: url("/assets/img/computer.jpg");}
-
-.contact {
-    font-size: 18px;
+.presentation {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  background-color: var(--alt-theme);
+  background-image: url("/assets/img/planet.jpg");
+  color: white;
 }
 
-a:hover {
-    text-decoration: none;
-    animation: pulse;
-    animation-duration: 0.5s;
+.transition {
+  height: 25vh;
+  width: 100vw;
+  background-color: var(--bg-theme);
+  background-image: url("/assets/img/planet.jpg");
+  transition: 1s;
+
+  border-top: #131313 20px solid;
+  border-bottom: #131313 20px solid;
 }
 
+.presentation div {
+  text-align: center;
+  
+}
 
-.footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--bar-color);
+.presentation a {
     color: white;
-    font-weight: bold;
-    padding-left: 10px;
 }
 
-.footer button {
-    background-color: var(--bar-color);
-    font-weight: bold;
-    color: var(--title-color);
-    border: none;
-}
-
-.footer button:focus {
-    outline: none;
-}
-
-.dropdown-item:hover {
-    animation: none;
-    background-color: lightgray;
+.full {
+  height: 100vh;
+  background-color: var(--bg-theme);
+  display: flex;
+  align-items: center;
+  transition: 1s;
 }
 
 .card {
-    padding: 5px;
-    background-color: var(--bg-theme);
-    color:var(--text-theme);
-    transition: 0.3s;
+  box-shadow: 8px 8px 19px #161616, -8px -8px 19px #2c2c2c;
+  border-radius: 25px;
+  border: none;
+  padding: 5px;
+  background-color: var(--alt-theme);
+  color: var(--text-theme);
 }
 
-#contact {
-    background-color: var(--bg-theme);
-    color: var(--text-theme);
-    transition: 0.3s;
+::-webkit-scrollbar {
+  width: 0;
 }
 
-#contact h2 {
-    margin-left: 20px;
+.container-fluid {
+  padding: 0;
 }
 
-.card:hover {
-    background-color: var(--bg-theme-hover);
-    color: var(--text-theme-hover);
-    transition: 0.3s;
+dfn {
+  font-style: normal;
+  font-weight: bold;
 }
 
-@media (min-width: 1200px) {
-    .nav-link:hover {
-        animation: swing;
-        animation-duration: 0.5s;
-    }
+.d-flex {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+i {
+  font-size: 5vh;
+}
+
+#bg-1 {
+  background-image: url("/assets/img/code.jpg");
+  background-position: 25vw;
+}
+#bg-2 {
+  background-image: url("/assets/img/camera.jpg");
+  background-position: 50vw;
+}
+#bg-3 {
+  background-image: url("/assets/img/website.png");
+  background-position: 25vw;
+}
+#bg-4 {
+  background-image: url("/assets/img/servers.jpg");
+}
+#bg-5 {
+  background-image: url("/assets/img/vector.png");
+  background-position: -25vw;
+}
+
+a:hover {
+  text-decoration: none;
+  animation: pulse;
+  animation-duration: 0.5s;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bar-color);
+  color: white;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.footer button {
+  background-color: var(--bg-theme);
+  font-weight: bold;
+  color: var(--title-color);
+  border: none;
+}
+
+.footer button:focus {
+  outline: none;
+}
+
+.dropdown-item:hover {
+  animation: none;
+  background-color: lightgray;
+}
+
+@media (max-width: 991.98px) {
+  .full {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #bg-1 {
+    background-position: 0;
+  }
+  #bg-2 {
+    background-position: 0;
+  }
+  #bg-3 {
+    background-position: 0;
+  }
+  #bg-5 {
+    background-position: 0;
+  }
 }
