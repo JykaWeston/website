@@ -33,7 +33,7 @@ body {
   align-items: center;
   display: flex;
   background-color: var(--alt-theme);
-  background-image: url("/assets/img/planet.jpg");
+  background-image: url("../assets/img/planet.jpg");
   color: white;
 }
 
@@ -41,7 +41,7 @@ body {
   height: 25vh;
   width: 100vw;
   background-color: var(--bg-theme);
-  background-image: url("/assets/img/planet.jpg");
+  background-image: url("../assets/img/planet.jpg");
   transition: 1s;
 
   border-top: #131313 20px solid;
@@ -98,22 +98,22 @@ i {
 }
 
 #bg-1 {
-  background-image: url("/assets/img/code.jpg");
+  background-image: url("../assets/img/code.jpg");
   background-position: 25vw;
 }
 #bg-2 {
-  background-image: url("/assets/img/camera.jpg");
+  background-image: url("../assets/img/camera.jpg");
   background-position: 50vw;
 }
 #bg-3 {
-  background-image: url("/assets/img/website.png");
+  background-image: url("../assets/img/website.png");
   background-position: 25vw;
 }
 #bg-4 {
-  background-image: url("/assets/img/servers.jpg");
+  background-image: url("../assets/img/servers.jpg");
 }
 #bg-5 {
-  background-image: url("/assets/img/vector.png");
+  background-image: url("../assets/img/vector.png");
   background-position: -25vw;
 }
 
