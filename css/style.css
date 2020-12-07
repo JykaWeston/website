@@ -50,11 +50,11 @@ body {
 
 .presentation div {
   text-align: center;
-  
 }
 
 .presentation a {
-    color: white;
+  color: white;
+  font-size: 25px;
 }
 
 .full {
@@ -67,7 +67,7 @@ body {
 
 .card {
   box-shadow: 8px 8px 19px #161616, -8px -8px 19px #2c2c2c;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
   padding: 5px;
   background-color: var(--alt-theme);
